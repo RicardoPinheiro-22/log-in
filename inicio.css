@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37b9f1;
+    font-family: "Poppins", sans-serif;
+}
+
+.container,
+.card,
+.dados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nome,
+.senha{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.container{
+    width: 35%;
+    height: 55vh;
+    background-color: #fff;
+}
+
+.card{
+    width: 100%;
+    height: 45vh;
+    gap: 3rem;
+}
+
+.dados{
+    width: 100%;
+    gap: 2rem;
+}
+
+.header h3{
+    font-size: 2rem;
+}
+
+.dados input{
+    width: 60%;
+    height: 5vh;
+    border-radius: 4px;
+    border: solid 1px #000;
+}
+
+#person,
+#senha{
+    width: 2rem;
+    scale: 1.7;
+}
+
+.continuar button{
+    width: 7rem;
+    height: 4vh;
+    background-color: #8e0c9e;
+    color: #f5f5f7;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    border: solid 1px #8e0c9e;
+    border-radius: 4px;
+}
+
+.continuar button:hover{
+    background-color: #f5f5f7;
+    color: #8e0c93;
+    border: solid 1px #8e0c9e;
+}
+
+.load{
+    width: 50px;
+    height: 50px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    border: 3px solid black;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+
+    animation: load 1s infinite;
+    display: none;
+}
+
+@keyframes load{
+    0%{transform:  rotate(0deg);}
+    50%{transform: rotate(180deg) scale(1.2);}
+    100%{transform: rotate(360deg);}
+}
+
+@media (max-width: 1452px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media (max-width: 930px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 544px){
+    .container{
+        width: 100%;
+    }
+}
