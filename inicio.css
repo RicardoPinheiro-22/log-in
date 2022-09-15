@@ -117,6 +117,7 @@ body{
 @media (max-width: 930px){
     .container{
         width: 90%;
+        margin-right: 1rem;
     }
 }
 
