@@ -1,8 +1,8 @@
-function nada(){
+function entrar(){
     var usuario = document.querySelector('#usuario')
-    var senha = document.querySelector('#pass')
-    var page = document.querySelector('.container')
-    var carregar = document.querySelector('.load')
+    var senha = document.querySelector('#senha')
+    var page = document.querySelector('.c_main')
+    var carregar = document.querySelector('.carregar')
     
     a = String(usuario.value)
     b = String(senha.value)
@@ -10,7 +10,7 @@ function nada(){
 
     if(a == "Professor", b == "Ricardo123"){
         page.style.display = "none"
-        carregar.style.display = "block"
+        carregar.style.display = "flex"
         
         setTimeout(() => {
             location.href="https://ricardopinheiro-22.github.io/gr-mio/";
