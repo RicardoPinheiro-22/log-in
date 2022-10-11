@@ -1,153 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
-body{
+.c_main{
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #37b9f1;
-    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
 }
 
-.container,
-.card,
-.dados{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-img{
-    width: 3rem;
-    height: 3rem;
-}
-
-.nome,
-.senha{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container{
-    width: 100%;
+.c_main_left{
+    width: 50%;
     height: 100vh;
-}
-
-.card{
-    width: 23%;
-    height: 50vh;
-    gap: 1rem;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
-    box-shadow: 0.75rem 10px 10px #0B759D;
 }
 
-.dados{
+.c_main_login{
+    width: 23rem;
+    height: 60vh;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    box-shadow: 0 0 20px #272727;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.c_main_login_name{
     width: 100%;
-    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
-.header h3{
-    font-size: 2rem;
-}
-
-.dados input{
-    width: 80%;
-    height: 5vh;
-    border-bottom-color: black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    background-color: transparent;
-}
-
-#person,
-#senha{
-    width: 2rem;
-    scale: 1.7;
-}
-
-.continuar{
+.c_main_login_perfil{
     width: 100%;
-}
-
-.continuar button{
-    width: 80%;
-    height: 4vh;
-    background-color: #0B759D;
-    color: #f5f5f7;
-    font-size: 0.9em;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 4px;
-}
-
-.continuar button:hover{
-    background-color: #f5f5f7;
-    color: #0B759D;
-    border: solid 1px #0B759D;
-    scale: 1.02;
-}
-
-.avancar{
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    margin: 1rem;
 }
 
-.load{
-    width: 50px;
-    height: 50px;
-
-    display: grid;
-    place-items: center;
-
+.c_main_login_perfil_circle{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid  1px #272727;
     border-radius: 50%;
-    border: 3px solid black;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-
-    animation: load 1s infinite;
-    display: none;
 }
 
-.mensagem{
-    display: none;
+.c_main_login_perfil img{
+    width: 3rem;
 }
 
-@keyframes load{
-    0%{transform:  rotate(0deg);}
-    50%{transform: rotate(180deg) scale(1.2);}
-    100%{transform: rotate(360deg);}
+.c_main_login_dados{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-@media (max-width: 1452px){
-    .card{
-        width: 70%;
-    }
+.c_main_login_dados input{
+    width: 18rem;
+    height: 2.5rem;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: 500;
 }
 
-@media (max-width: 930px){
-    .card{
-        width: 70%;
-        margin-right: 1rem;
-    }
+.c_main_login_entrar button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #7000bf, #00fffd);
+    color: #f5f5f5;
+    cursor: pointer;
 }
 
-@media (max-width: 544px){
-    .card{
-        width: 70%;
-    }
+.c_main_right{
+    width: 50%;
+    height: 100vh;
+}
+
+.c_main_right img{
+    height: 100vh;
+    width: 100%;
 }
