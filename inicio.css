@@ -139,13 +139,23 @@
     }
 }
 
-@media screen and (max-width: 1023px) and (orientation: portrait){
+@media screen and (max-width: 1200px){
     .c_main_right{
         display: none;
     }
 
     .c_main_left{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape){
+    .c_main_login{
+        height: 85vh;
+    }
+
+    .c_main_login_entrar button{
+        margin-top: 4rem;
     }
 }
 
